@@ -12,6 +12,7 @@ export default {
         'background-primary': 'var(--background-primary)',
         'background-secondary': 'var(--background-secondary)',
         'background-tertiary': 'var(--background-tertiary)',
+        'background-quaternary': 'var(--background-quaternary)',
 
         'content-heading': 'var(--content-heading)',
         'content-body': 'var(--content-body)',

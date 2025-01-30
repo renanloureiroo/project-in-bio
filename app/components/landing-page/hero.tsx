@@ -1,4 +1,33 @@
+import { LinkButtonProps } from '../common/link-button'
+import { UserCard } from '../common/user-card'
 import { Button, Input } from '../ui'
+
+const links: LinkButtonProps[] = [
+  {
+    href: 'https://linkedin.com/in/renanloureiroo',
+    icon: 'linkedin'
+  },
+  {
+    href: 'https://github.com/renanloureiroo',
+    icon: 'github'
+  },
+  {
+    href: 'https://instagram.com/renanloureiroo',
+    icon: 'instagram'
+  },
+  {
+    href: 'https://twitter.com/renanloureiroo',
+    icon: 'twitter'
+  },
+  {
+    href: 'https://dribbble.com/renanloureiroo',
+    icon: 'dribbble'
+  },
+  {
+    href: 'https://www.youtube.com/@renanloureiro9564',
+    icon: 'youtube'
+  }
+]
 
 export const Hero = () => {
   return (
@@ -28,7 +57,13 @@ export const Hero = () => {
           accent-accent-purple, transparent 55%)]"
       >
         <div className="relative">
-          {/* <UserCard/> */}
+          <UserCard
+            name="Renan Loureiro"
+            position="Software Engineer"
+            links={links}
+            visits={1234}
+            avatar="/me.webp"
+          />
           <div className="absolute -bottom-[7%] -right-[45%]">
             {/* <TotalVisits/> */}
           </div>
